@@ -1,4 +1,4 @@
-package domain;
+package br.com.willyan.seplag.lotacao.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,20 +11,17 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Lotacao {
+public class FotoPessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long lotId;
+    private Long fpId;
 
-    private LocalDate lotDataLotacao;
-    private LocalDate lotDataRemocao;
-    private String lotPortaria;
+    private LocalDate fpData;
+    private String fpBucket;
+    private String fpHash;
 
     @ManyToOne
     @JoinColumn(name = "pes_id")
     private Pessoa pessoa;
-
-    @ManyToOne
-    @JoinColumn(name = "unid_id")
-    private Unidade unidade;
 }
+

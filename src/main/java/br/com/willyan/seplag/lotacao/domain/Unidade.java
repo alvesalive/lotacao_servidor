@@ -1,4 +1,4 @@
-package domain;
+package br.com.willyan.seplag.lotacao.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

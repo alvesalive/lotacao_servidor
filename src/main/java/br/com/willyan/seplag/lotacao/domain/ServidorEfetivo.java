@@ -1,4 +1,4 @@
-package domain;
+package br.com.willyan.seplag.lotacao.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,16 +9,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PessoaEndereco {
+public class ServidorEfetivo {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long pesId;
 
-    @ManyToOne
+    private String seMatricula;
+
+    @OneToOne
+    @MapsId
     @JoinColumn(name = "pes_id")
     private Pessoa pessoa;
-
-    @ManyToOne
-    @JoinColumn(name = "end_id")
-    private Endereco endereco;
 }
