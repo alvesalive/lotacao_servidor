@@ -1,13 +1,12 @@
 package br.com.willyan.seplag.lotacao.service;
 
 import br.com.willyan.seplag.lotacao.domain.FotoPessoa;
+import br.com.willyan.seplag.lotacao.propertie.MinioProperties;
 import br.com.willyan.seplag.lotacao.repository.FotoPessoaRepository;
 import br.com.willyan.seplag.lotacao.repository.PessoaRepository;
 import io.minio.*;
 import io.minio.http.Method;
 import lombok.RequiredArgsConstructor;
-import org.checkerframework.checker.units.qual.A;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,10 +20,7 @@ import java.util.concurrent.TimeUnit;
 public class FotoPessoaService {
 
     private final MinioClient minioClient;
-
-    @Autowired
-    private MinioProperties minioProperties;
-
+    private final MinioProperties minioProperties;
     private final FotoPessoaRepository fotoRepo;
     private final PessoaRepository pessoaRepo;
 

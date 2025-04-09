@@ -1,6 +1,10 @@
 package br.com.willyan.seplag.lotacao.service;
 
 import br.com.willyan.seplag.lotacao.propertie.JwtProperties;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;

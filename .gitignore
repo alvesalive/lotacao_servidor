@@ -1,0 +1,62 @@
+# ==========================================================
+# git rm -r --cached .
+# git add .
+# git commit -m " .gitignore and clean ignored files"
+# ==========================================================
+
+# ========================
+# Java / Maven
+# ========================
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+**/logs/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+
+# ========================
+# IntelliJ IDEA
+# ========================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ========================
+# VS Code
+# ========================
+.vscode/
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Environment / Config
+# ========================
+.env
+*.env
+*.key
+*.pem
+*.crt
+application-prod.properties
+application-dev.properties
+
+# ========================
+# Docker
+# ========================
+/docker-compose.override.yml
+**/docker-data/
+**/postgres-data/
+**/minio-data/
+
+# ========================
+# Logs & Temp
+# ========================
+*.log
+hs_err_pid*
