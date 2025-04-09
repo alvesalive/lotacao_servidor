@@ -1,5 +1,6 @@
 package br.com.willyan.seplag.lotacao.config;
 
+import br.com.willyan.seplag.lotacao.propertie.MinioProperties;
 import io.minio.MinioClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

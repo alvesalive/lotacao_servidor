@@ -1,4 +1,4 @@
-package br.com.willyan.seplag.lotacao.config;
+package br.com.willyan.seplag.lotacao.propertie;
 
 import lombok.Data;
 import lombok.Getter;
