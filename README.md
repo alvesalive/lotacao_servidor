@@ -150,3 +150,7 @@ Tipo: multipart/form-data
 Campo: file
 Header: Authorization: Bearer <token>
 ```
+
+
+### Para usar no Insomnia 
+Importe o arquivo 'lotacao_collection.json'
